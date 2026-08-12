@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const SITE_NAME = "Y2KShop.com";
 const ROBOT_ICON = "\uD83E\uDD16";
 const DEVIL_ICON = "\uD83D\uDE08";

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const ONLINE_ICON = "\uD83D\uDFE2";
 const POINT_UP_ICON = "\uD83D\uDC46";
 const EM_DASH = "\u2014";

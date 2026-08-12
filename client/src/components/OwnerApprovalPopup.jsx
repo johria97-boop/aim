@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const DING_SOUND =
   "data:audio/wav;base64,UklGRkgAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YSQAAACAgP///wAAAP//AAD//wAAAP8AAID/AAAA//8AAP//AAD//wAA";
 const WARNING_ICON = "\u26A0\uFE0F";

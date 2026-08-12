@@ -8,7 +8,7 @@ import RetroTerminal from "./components/RetroTerminal.jsx";
 import TrustChart from "./components/TrustChart.jsx";
 
 const DEMO_MODE = false;
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const DIALUP_SOUND =
   "data:audio/wav;base64,UklGRlQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YTAAAACAgP///wAAAP//AAAA//8AAID/AAAAAP//AAD//wAAAP8AAID/AAAA//8AAP//AAAA";
 const BUTTON_HOVER_SOUND =
